@@ -1,0 +1,25 @@
+button{
+    background :transparent;
+    border-radius: 150px;
+    border-color: yellowgreen;
+    color : grey;
+    width : 100px;
+    font-family:  sans-serif;
+    margin-left: 50%;
+}
+
+section{
+    display: block;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 3px 3px 2px blue;
+    margin: 20px 0;
+    padding: 20px;
+    width:80%;
+    margin-left: 130px;
+}
+.title{
+    text-align: center;
+    font-family:  sans-serif;
+    color : grey;
+}

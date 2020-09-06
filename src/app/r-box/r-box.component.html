@@ -1,0 +1,15 @@
+<div>
+    <app-create-box 
+        (boxCreated)="onBoxCreated($event)"></app-create-box>
+</div>
+
+<div>
+    
+    <app-display-box
+    *ngFor="let bx of Boxes; let i = index"  
+    [Boxes]="bx"
+    [ngClass]="{marked: markedbxIndex === i }"
+    (boxDeleted)="boxDeleted(markedbxIndex)"
+    (onkeydown)="boxDeleted(markedbxIndex)"
+    (click)="markedbxIndex = i  "></app-display-box>
+</div>
